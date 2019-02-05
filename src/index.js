@@ -1,4 +1,5 @@
 const io = require('socket.io')();
+io.origins('*:*');
 
 let serverState = new Map([
     [1, { status: 'free', tableValues: Array(9).fill(null), isXNext: true}],
